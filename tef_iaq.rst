@@ -13,22 +13,22 @@ Sometimes it is more veiled:
 
 Type A - Programmers who use my favourite language
 
-Type B - Programmers who do not use my favourite lanuage
+Type B - Programmers who do not use my favourite lanhuage
 
 
 Why do people keep doing this?
 ------------------------------
-    it's easy and gets blog hits. everyone loves a simple answer to a complex problem.
-
-     Dividing people into distinct groups smacks of trying to categorize the problem-solvers instead of trying to identify the problem itself.
-
+It's easy and gets blog hits. Everyone loves a simple answer to a complex problem.
 
       
 
 
 
-How should be we teaching Programming?
-======================================
+
+
+
+What's wrong with how we teach programming?
+===========================================
 
 If you ask any programmer, you will get the following answer::
 
@@ -36,72 +36,100 @@ If you ask any programmer, you will get the following answer::
     *exactly*, because my mistakes have been refined and polished over
     the years
 
-The two biggest influences on how programming is taught are nostalgia, and the way in which the teacher learns best. It's a cargo cult approximation to education - do what I do and you will learn what I did.
+In reality, the two largest influences on how programming is taught today are: nostalgia, and the way in which the teacher learns best. It's a cargo cult approximation to education - do what I do and you will learn what I did.
 	
-Erm, can you elaborate on that?
--------------------------------
+Have you thought about being constructive for a change?
+--------------------------------------------------------
+
+Much of the discussion of education focuses heavily on “what students must know”, rather than more obviously “What do students want to learn, and how do they learn?”. A vital skill of the employed programmer is a willingness to learn on their own, and to explore. We need to encourage this from the outset, instead of dictating their course.
+
+That said, a little guidance and help goes a long way.
+
+
+So we help people learn over teaching them?
+-------------------------------------------
+
+This is more obvious in adult education - a teacher knows best attitude rarely earns you the respect of the pupils. I've learned much of what I know about programming by helping others gain an understanding. The teacher needs to cater to the pupils needs.
 	
-I'd like to see more appreciation for learning styles - the notion that some people prefer exercises to books, and some prefer talking to pictures. Many believe that the way in which you learn is the best way for everyone to learn. Most teachers will only teach in the way that they prefer, rather than teaching in a way that helps the students.
+For a start, I'd like to see more appreciation for learning styles - the notion that some people prefer exercises to books, and some prefer talking to pictures. Many believe that the way in which you learn is the best way for everyone to learn. Most teachers will only teach in the way that they prefer, rather than teaching in a way that helps the students.
 	
-Teaching programming to some extent, should be teaching the history of programming in compressed form. It's often easier to understand how it works by understanding how it got there.
 
-Should C be taught first?
--------------------------
-
-I don't advocate it because it is hard to do anything immediately useful with it. Your argument is in essence 'C is character building'. Great job! Suffering is such a great learning experience!
-
-Personally I think we should be aiming to teach as little programming as possible. Rather than trying to cram a lifetimes experience down their throats in the first week. 
-
-I would advocate *any* scripting language over C first. Even in the grizzly macho world of unix, people learn shell before they learn C. 
-
-People approach learning with caution, and they generalise on the initial experience. Often they learn with a predisposition for giving up - looking for an excuse to move on to something else. You see this all the time on the forums - "Hi I am unconfident about my approach and I don't want to find out the hard way".
-
-Your fire and brimstone methodology betrays a disdain towards beginners and an ignorance of how people learn. An introduction to programming should be just that - trying to convey a simple understanding with a desire to learn more. 
-
-Teaching C first is a form of abuse.
-
-Should we teach OO first?
--------------------------
-Teaching beginners OO is like explaining narrative structure to a four year old who has just got the hang of 'spot the dog'. OO is solving a problem they don't have and don't understand.
-
-if you want to teach people how to program in a modern style, they need to know how and why it got that way, not just the dogma.
-
-And what about demanding Math Skills?
---------------------------------------------------
-Well, I'd argue that the notion that maths and programming are actually quite related, and the ignorance thereof is where we get things like floating point misconceptions.
-
-the thing is, dijkstra quotes aside, part of programming is mathematical. not to say that differential geometry is somehow going to be useful, but reasoning about your program requires the same discipline of thought found in mathematics. i'm not saying that programers need to be mathematicians, but /are/ mathematicians (a class of). proofs are programs, innit.
-
-anyway, the question of 'the maths approach' is answering the wrong question. we have a presupposition that programming is /one skill/ to be taught, rather than an interdisciplinary set of skills.
-
-programmers need to be able to write fluently, have critical reasoning skills, engineering methodologies as well as mathematical reasoning. often overlooked is one of the most vital skills; domain experience of the problem you are trying to solve. 
-
-at the end of the day the problem is "how can we make computer programming more accessible and useful to everyone, and make things suck less", not "how can we torture cs undergraduates".
+If someone asks you to teach them to program, ask them what they want to create, and then point them in the right direction.
 
 
-So how do we make learning not suck?
-------------------------------------
+How do you help people program ?
+--------------------------------
 
-I'd really like to revisit logo style learning 
+I encourage people to find a sandbox to play in. Be it a 2d environment with a turtle drawing pictures, or a musical environent, somewhere you can add elements and program them.
 
-A set of sandbox environments where you can add elements and program them. You start on a small program and tweak it, moving on to larger examples and more ambitious changes. As the environment grows in complexity, more features are introduced within the language to cope. Ideally it would be a fun transition from turtle graphics to flocking simulations.
+I try to focus on getting them to explain things to me and asking questions, rather than the drudgery of rote exercises. The computer should be a tool for learning and exploration, driven by the student.
 
-Since we're all modern and such, i'd like to do it over the web, so people can share and change other peoples code easily. The underlying principle is that the student drives the learning through exploration. There are no courses, exercises or textbook examples. Autodidacticism is cool and I think that most learner programmers should focus on learning to read code before learning to write code. 
-
-My first language was logo and I still have a whimsy nostalgia for it, despite its numerous warts. 
+I must confess that I too am tainted with a nostalgia — one of my earliest experiences of programming was in logo and I had fun.
 
 Logo was built by Seymour Papert to create a sort of 'math world'.His idea was to give people an environment in which to construct their own rules and problems, and try to solve them, rather than a predefined course or structure to work through. Turtle graphics are the canonical example of the 'math world'. A 2d box to draw in and play.
 
-I've seen a similar idea espoused in math education. Currently it is treated as a death march through formulae to be inscribed into your brain, rather than actually trying to solve problems. Learning is more rewarding when you get to be creative about how you go about it.
+I've seen a similar idea espoused in math education. Currently it is treated as a death march through formulae to be inscribed into your brain, rather than actually trying to solve problems. Learning is more fun and rewarding when you get to be creative about how you go about it.
 
-The other influence for me beyond Papert is "view-source". I learned well from copying others and changing things. Fill in the blank exercises are boring to me, and
+The other influence for me beyond Papert is "view-source". I learned well from copying others and changing things. Fill in the blank exercises are boring to me, as are stepping through a problem in tiny chunks. I enjoyed taking something and tweaking it and manipulaing it to change the behaviour.
 
-(I guess you might say that I learn best from dicking around with shit to see how it works. I got 'tested' once, I don't have a dominant learning style, but I can at least cite some professor who liked it too)
+I learned a lot from reading other peoples code and changing it, more than I've learned from my own code. Learners need to be able to share and reuse examples easily. Programming is not just explaining things to the computer but working out how things work.
 
 
-I think it is more about avoiding teaching /at/ people from a position of authority, and trying to learn /with/ people. The child/parent is easier to see, but there is no reason this doesn't apply to teaching adults either. 
-	
-	Most of the time when i've taught programming I try to focus on getting them to explain things to me and asking questions, rather than the drudgery of rote exercises. The computer should be a tool for learning and exploration, but we teach programming towards writing and modelling business logic (need I bring up how objects are explained). 
+
+Reading code? Surely beginners should spend a lot of time writing it?
+-------------------------------------------------------------------
+
+
+
+
+
+What language should people learn first?
+========================================
+
+I would start with a relatively useful language from the outset, and by that I mean something::
+    - that they can do something useful or fun within an afternoon. 
+    - their friends know and can help them with. 
+    - relatively easy to install and run.
+    - that doesn't require navigating an IDE.
+    - that is general purpose.
+
+I would advocate any popular scripting language - Python, Ruby, JavaScript, Lua.
+
+Don't worry about objects and classes too much. Worry about data structures and algorithms. Get simple functions working to make things happen.
+
+Learning a language should be a side effect of some larger and more interesting goal. People rarely learn languages for their own merits.
+
+Scripting? Real mean use C! I want to be a Real man!
+----------------------------------------------------
+
+C is a useful language. Many languages are implemented it it. Much of the libraries and operating system is implemented in it. Unless C is the only option for the project desired, I wouldn't advocate it as a first language.
+
+I don't advocate it because it is hard to do anything immediately useful with it, in a small amount of time. Advocates seem to argue that 'C is character building'. Great job! Suffering is such a great learning experience!
+
+I would advocate *any* scripting language over C first. Even in the grizzly macho world of unix, people learn shell before they learn C. Using C effectively requires much more knowledge of the operating system.
+
+
+I hear Java and C# are also popular in industry, should I learn those first instead?
+------------------------------------------------------------------------------------
+
+Using C# and Java are difficult for vastly different reasons to C. For each of those languages, a simpler scripting language is available on the runtime, with access to the same libraries. 
+
+Understanding Object Orientation requires a good understanding of procuedural programming first. Focus on the basics before moving on to developing classes and objects.
+
+Java, C# make better second languages.
+
+People approach learning with caution, and they generalise on the initial experience. Often they learn with a predisposition for giving up - looking for an excuse to move on to something else. You see this all the time on forums - "Hi I am unconfident about my approach and I don't want to find out the hard way".
+
+
+What about mathematics - how much needs to be learned?
+------------------------------------------------------
+Well, I'd say maths and programming are actually quite related, and the ignorance thereof is where we get things like floating point misconceptions. You need to understand as much mathematics as your program demands. Not many programs have a high demand of math skills beyond counting. If you can use a spreadsheet, you probably know more than enough to start.
+
+Part of programming is mathematical, not to say that differential geometry is somehow going to be useful, but reasoning about your program requires the same discipline of thought found in mathematics. I'm not saying that programers need to be mathematicians, but /are/ mathematicians (a class of). proofs are programs, innit.
+
+Programming is ultimately an interdisciplinary set of skills: Programmers need to be able to write fluently, have critical reasoning skills, engineering dicipline as well as mathematical reasoning. Often overlooked is one of the most vital skills; Domain experience of the problem you are trying to solve. 
+
+
 
 
 
@@ -385,6 +413,34 @@ exceptions as leaky abstractions
 
 should we use exceptions as flow control?
 
+		semipredicate problem:
+			we need a way to indicate the success or failure of a function, as well 
+			as the return value. 
+	
+			too much has implicit truth attached, and cannot be used to indicate failure
+				if x: means if x is not 0, empty, false or None
+				but if x[key] can return 0, empty, false or None for success and throws KeyError on failure
+			result:
+				cannot use if on things that use exceptions for control flow
+				if/and/or work on values, try works on errors
+			
+			classic hacks:
+				"0 but true"
+			
+			exceptions are shadowed:
+				for a function that can throw a keyerror, if any of the subfunctions
+				throw a keyerror it is caught and moved on. this can lead to subtle 
+				bugs where only some errors are caught by accident
+			
+		exceptions for flow control is used to solve this in python, but now 
+		and/if/or cannot be used to combine things.
+
+		exceptions are used with two different intents to unwind the stack,
+		and the failure case is handled in ad-hoc ways 			
+		exceptional cases are the things that cannot be handled 
+		outside of terminating the process and restated
+
+
 
 
 
@@ -628,10 +684,7 @@ How do you feel about prolog?
 	
 	some guy on the internet posted:
 	I used Prolog in a comparative languages course. The biggest program we did was a map-coloring one (color a map with only four colors so that no bordering items have the same color, given a mapping of things that border each other). I say biggest because we were given the most time with it. I started out like most people in my class trying to hack the language into letting me code a stinking algorithm to color a stinking map. Then I wrote a test function to check if the map was colored and, in a flash of prolog, realized that that was really all I needed to code.
-	
-	erlang in prolog
-		eval, dcgs, messages :w in swi prolog
-		
+			
 
 
 Do you have any left over glib statements
