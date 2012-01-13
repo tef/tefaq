@@ -15,17 +15,17 @@ Note: TODO - partial/incomplete. XXX - barren/empty.
 What are the Two Types Of Programmers?
 ======================================
 
-Many blogs claim to elcuidate a dichotomy of programmers - good and bad. Upon careful inspection, most of them turn out to actually dictate the following::
+Many blogs claim to elcuidate a dichotomy of programmers - good and bad. Upon careful inspection, most of them turn out to actually dictate the following types:
 
-    Type A - Programmers who are like me. 
+    A. Programmers who are like me. 
 
-    Type B - Programmers who are not like me.
+    B. Programmers who are not like me.
 
-The assertion is that if you cargo cult their personality, you too can be a successful programmer. Sometimes it is more veiled::
+The assertion is that if you cargo cult their personality, you too can be a successful programmer. Sometimes it is more veiled
 
-    Type A - Programmers who use my favourite language
+    A. Programmers who use my favourite language
 
-    Type B - Programmers who do not use my favourite language
+    B. Programmers who do not use my favourite language
 
 It's easy and gets blog hits. Everyone loves a simple answer to a complex problem.
 
@@ -93,7 +93,7 @@ There is more to it than that, but essentially to interview a programmer, it's b
 What's wrong with how we teach programming?
 ===========================================
 
-If you ask any programmer, you will get the following answer::
+If you ask any programmer, you will get the following answer:
 
     People should learn programming from my mistakes by repeating them
     *exactly*, because my mistakes have been refined and polished over
@@ -190,6 +190,11 @@ Programming is ultimately an interdisciplinary set of skills: Programmers need t
 XXX Why did Dijkstra Hate on Basic?
 ===================================
 
+Dijkstra is an emminently quotable computer scientst
+
+    It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration.
+
+From 
 history lesson: dijkstra the troll
 yes, basic was terrible
 yes, the truths hurt
@@ -313,10 +318,6 @@ take the viewer into account - more room for propaganda
     
 good visualizations are honest and do not distort the facts of figures
 		
-
-
-
-
 
 
 
