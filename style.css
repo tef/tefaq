@@ -53,7 +53,8 @@ body {
 
 .document p,
 .document dl,
-.document pre
+.document pre,
+.document blockquote
 {
   /* Standard paragraph text */
   line-height: 1.5em;
@@ -139,3 +140,29 @@ h1.title {
   text-shadow: 1px 1px 4px #ccc;
 }
 
+/* Misc. stuff */
+.document pre {
+  /* Obviously code - make it look like it */
+  display: block;
+  color: #f0f0f0;
+  background: #333;
+  padding: 1em 0 1em 1em;
+  border-top: solid 1em #444;
+  word-wrap: break-word;
+}
+.document blockquote {
+  /* a quote */
+  display: block;
+  color: #333;
+  background: #f0f0f0;
+  margin: 1em 0;
+  padding: 1em;
+  font-style: italic;
+}
+.document dl>dt {
+  /* definition list title */
+  font-weight: bold;
+}
+.document dl>dd {
+  margin: 1em 0 1em 1em;
+}
