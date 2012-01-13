@@ -2,7 +2,7 @@
 body {
   font-family: "Georgia", "Times New Roman", serif;
   text-align: center;
-  background: #FDFDFA;
+  background: #FEFEFE;
   color: #030303;
   margin-bottom: 10em;
 }
@@ -63,7 +63,7 @@ body {
 
 /* Link styles */
 .document p a:link, .document p a:hover {
-  color: #550000;
+  color: #000055;
   text-decoration: none;
   border-bottom: dotted 1px #ccc;
   padding-bottom: 2px;
@@ -88,7 +88,7 @@ body {
 }
 .contents>ul>li a:link {
   text-decoration: none; 
-  color: #550000;
+  color: #000055;
   display: block;
   width: 100%;
   border-bottom: solid 1px #f0f0f0;
@@ -132,12 +132,13 @@ body {
 
 /* the title */
 h1.title {
-  font-size: 10em;
+  /*font-size: 2em;
   line-height: 1em;
   margin: 0.1em 0 0.1em -0.2em;
   padding: 0;
   color: #2f2222;
   text-shadow: 1px 1px 4px #ccc;
+  */
 }
 
 /* Misc. stuff */
