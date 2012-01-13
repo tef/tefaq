@@ -9,7 +9,6 @@ body {
 .document {
   /* Content should have optimal reading line length, 35 char widths
    * We don't center here to allow for the bullet hack */
-
   margin: 0 auto;
   width: 30em;
   min-width: 25em;
@@ -52,7 +51,10 @@ body {
   color: #550000;
 }
 
-.document p {
+.document p,
+.document dl,
+.document pre
+{
   /* Standard paragraph text */
   line-height: 1.5em;
   text-align: left;
@@ -68,3 +70,72 @@ body {
 .document p a:visited {
   color: #666;
 }
+
+/* Table of Contents */
+.topic-title {
+  display: none; /* hide "Contents" */
+}
+.contents {
+  text-align: left;
+}
+/* links */
+.contents ul {
+  list-style: none;
+}
+.contents>ul {
+  padding: 0;
+}
+.contents>ul>li a:link {
+  text-decoration: none; 
+  color: #550000;
+  display: block;
+  width: 100%;
+  border-bottom: solid 1px #f0f0f0;
+  padding: 0.5em 0;
+}
+.contents>ul>li a:visited {
+  border-bottom: solid 1px #f0f0f0;
+  color: #555;
+}
+.contents>ul>li>a:hover {
+  color: #990000;
+  cursor: pointer;
+  background: #fff;
+}
+
+/* controversial decision - hide subsection headers
+ * the way they're written don't make sense to be directly navigated to */
+.contents>ul>li>ul {
+  display: none;
+}
+
+/* docinfo */
+.docinfo {
+  text-align: left;
+  margin-top: -1em;
+}
+.docinfo-name {
+  padding-right: 1em;
+}
+
+/*
+.contents ul li ul {
+  padding-top: 0.5em;
+  padding-left: 1em;
+  font-size: 90%;
+}
+.contents ul li ul li {
+  line-height: 2em;
+}
+*/
+
+/* the title */
+h1.title {
+  font-size: 10em;
+  line-height: 1em;
+  margin: 0.1em 0 0.1em -0.2em;
+  padding: 0;
+  color: #2f2222;
+  text-shadow: 1px 1px 4px #ccc;
+}
+
