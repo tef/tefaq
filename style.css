@@ -1,0 +1,70 @@
+/* structural shit */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  text-align: center;
+  background: #FDFDFA;
+  color: #030303;
+  margin-bottom: 10em;
+}
+.document {
+  /* Content should have optimal reading line length, 35 char widths
+   * We don't center here to allow for the bullet hack */
+
+  margin: 0 auto;
+  width: 30em;
+  min-width: 25em;
+  max-width: 35em;
+}
+/* Sections can be nested - here we visually seperate the top level sections
+ * with three subtle centered dots */
+.document>.section::after {
+  content: "\2219 \2219 \2219";
+  letter-spacing: 2em;
+}
+
+.document h1,
+.document h2,
+.document h3,
+.document h4,
+.document h5,
+.document h6 {
+  text-align: left;
+  /* Section titles get more space */
+  line-height: 1.3em; 
+  /* some very gentle extra padding */
+  padding: 0.6em 0;
+}
+
+.document h1 {
+  font-size: 160%;
+}
+.document h2 {
+  font-size: 120%;
+}
+.document h3 {
+  font-size: 110%;
+}
+
+.toc-backref {
+  /* These should not be colored - access to TOC is a
+   * convenience method & shouldn't be highlighted to the user */
+  text-decoration: none;
+  color: #550000;
+}
+
+.document p {
+  /* Standard paragraph text */
+  line-height: 1.5em;
+  text-align: left;
+}
+
+/* Link styles */
+.document p a:link, .document p a:hover {
+  color: #550000;
+  text-decoration: none;
+  border-bottom: dotted 1px #ccc;
+  padding-bottom: 2px;
+}
+.document p a:visited {
+  color: #666;
+}
