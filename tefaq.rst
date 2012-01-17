@@ -1,15 +1,22 @@
-========
- tefaq 
-========
+================
+ tefaq — wtfwtd
+================
 :Author: tef
-:Date: 2012-01-12
-:Version: Draft
+:Date: 2012-01-14
+:Version: Unpublished Draft
 
-This is a compilation of things i’ve said on the internet. Some of it might be true. YMMV. HTH. HAND.
+This is unfinished and work in progress. There aren't links or references yet, so 
+
+This is a compilation of things i’ve said on the internet. Some of them might be true.  YMMV. HTH. HAND.
 
 Note: TODO - partial/incomplete. XXX - barren/empty.
 
 .. contents::
+
+
+XXX Why are you writing an FAQ?
+===============================
+
 
 
 What are the Two Types Of Programmers?
@@ -197,6 +204,7 @@ Dijkstra is an emminently quotable computer scientst, mostly for his famous list
 The essay itself was arguing "How do we tell truths that might hurt?", when commonly accepted problems are shrugged off or avoided. The answer turns out to be rather inflamatory. Dijskstra was so effective at raising his arguments this way that we're still arguing about them now.
 
 The thing people forget is that programming was substantially different in 1975. Dijkstra railed against Dartmouth Basic - a glorified assembler language. It isn't the BASIC used today:
+
     Variables were one letter long with an optional digit
     Although FOR was present - while loops, break and other niceties were implemented with unrestricted goto. 
     Whitespace was optional between expressions.
@@ -252,13 +260,9 @@ With no real individual desire to work, the project flounders. Collaboration ten
 
 Goon Project
 ------------
-Enthusiasm didn't get us to the moon, but we've got 18 logos and a wiki.
+Enthusiasm didn't get us to the moon, but we've got 18 logos and a wiki. A fatal group project popluated by idea guys and all discussions revolve around the colour of the bike shed.
 
-When a lot of people want to solve a problem and don't know how, much of the bad ideas above surface and not much else. The most common cause of this is video games.
-
-Everyone has played them and not very many people have written them. A lot of enthusiasm goes a long way. Mostly "What should we call it", and "I can make a better logo"
-
-
+When a lot of people want to solve a problem and don't know how, much of the bad ideas above surface and not much else. The most common cause of this is video games. Everyone has played them and not very many people have written them. A lot of enthusiasm goes a long way. Mostly "What should we call it", and "I can make a better logo"
 
 
 
@@ -530,6 +534,11 @@ Now we use objects to make a ‘strategy’ or a ‘factory’ or a ‘builder�
 
 Peter Norvig makes a good argument for this http://www.norvig.com/design-patterns/
 
+XXX: still easier to implement a missing feature over a missing library
+
+XXX What are some language features that are missing
+====================================================
+
 
 What about hungarian notation
 =============================
@@ -618,6 +627,11 @@ XXX  What's call-with-current-continuation mean and why do I care
 insert terrible code 1 and 2
 
 
+
+XXX I want to scale, scale-free, free as the wind blows...
+==========================================================
+
+scaling is an operations issue, mostly. not a technical one.
 
 
 XXX Why don't you like asynchronous frameworks?
