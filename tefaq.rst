@@ -545,10 +545,6 @@ jim gray's awesome paper
 otp
 ---
 XXX Why do you hate threads?
-threads: the windows 95 of concurrency
-share everything and hope nothing shits itself
-
-no notion of seperation or failure management.
 
 
 XXX What do you think of Static Analysis
@@ -663,13 +659,6 @@ terrible functionality of code
     
 parsing library for python
 
-
-XXX  What's call-with-current-continuation mean and why do I care
-=================================================================
-insert terrible code 1 and 2
-
-
-
 XXX I want to scale, scale-free, free as the wind blows...
 ==========================================================
 
@@ -695,6 +684,10 @@ yield is somewhat less awkward to use, but still constrains
 fibers/stacklets/actors work best 
 
 
+threads: the windows 95 of concurrency
+share everything and hope nothing shits itself
+
+no notion of seperation or failure management.
 
 
 TODO Why did Dijkstra Hate on Basic?
@@ -723,42 +716,6 @@ Learning to carefully assembled a large ball of mud didn't help you to write str
 
 Programming is hard. Making it harder doesn't help beginners, or experts alike. It is a shame that dijkstra is most remembered for his vocal criticism rather than his vast contributions to programming, but that is another issue altogether.
 
-
-
-XXX What is the difference between Python and Ruby
-==================================================
-orthogonal but similar languages.
-if you ask a python programmer and ruby programmer the code wil look very similar
-because they both used to write java and have brain damage
-
-
-functions as methods vs methods as functions
-    i.e explicit self
-observer vs iterator
-    i.e iter() vs 
-attributes vs messages
-    message sending vs simula stype objects
-    
-implicit ducks:
-    python everything is a bool
-    ruby only nil, false are false.
-python abhors special cases
-    prefers features that capture a lot of use
-    over special cases for common idioms
-    
-in terms of 0,1,infinity. python tends to go for 0 or infinity.
-
-ruby uses the smalltalk collection style
-    send a message to a collection, pass an observer to be called
-
-
-
-XXX What do you think of Python3 
-================================
-premature autopsy
-chicken and egg problem of migration by  breaking libraries and language at same time
-
-in effect forking the language 
 
 
 XXX What's your problem with PHP
@@ -796,18 +753,6 @@ the moral is: for everything they've fixed, they've often fixed by duct taping o
 this won't bite most web applications as many of them are simple templates around a database.
 with larger applications or frameworks, php struggles
 
-
-
-
-
-
-
-XXX What do you think of Go?
-============================
-
-
-XXX What do you think of Modula-3
-=================================
 
 
 TODO Have you recovered from using Visual Basic yet?
