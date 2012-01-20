@@ -1,4 +1,7 @@
 
+wc:
+	wc tefaq.rst
+
 html: tefaq.rst
 	rst2html.py --stylesheet style.css tefaq.rst  > tefaq.rst.html
 upload: html

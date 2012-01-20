@@ -2,25 +2,49 @@
  tefaq — wtfwtd
 ================
 :Author: tef
-:Date: 2012-01-14
+:Date: 2012-01-20
 :Version: Unpublished Draft
 
-This is unfinished and work in progress. There aren't links or references yet, so 
-
-This is a compilation of things i’ve said on the internet. Some of them might be true.  YMMV. HTH. HAND.
-
-Note: TODO - partial/incomplete. XXX - barren/empty.
+This is unfinished and work in progress. There aren't links or references yet, so caveat empor.
 
 .. contents::
 
 
-XXX Why are you writing an FAQ?
-===============================
+Why are you writing an FAQ?
+===========================
+
+I am a loudmouth and I get into a lot of arguments with people who are wrong on the internet. Some people have found my opinions useful, but for me they normally get me into trouble.
+
+This is a compilation of things i’ve said on the internet. Some of them might be true.
+
+YMMV. HTH. HAND.
+
+Who are you?
+------------
+
+I learned to program on second hand 8-bit machines from books and what I could gander from manuals. Eventually I got hold of the internet and it has been downhill since then. I started programming because of a desire to take things apart and see how they worked. The more I learn about programming the more I am surprised *that* things work.
+
+What have you done?
+-------------------
+
+I think my most successful program has been an irc bot that says “butt”. From this, other people have rewritten large parts of it, ported it to other languages, and forked it and improved the “butt” algorithm, and two comics drawn. I can't honestly say any other program has been so rewarding.
+
+
+Beyond that I have worked as a programmer in a number of small companies, as well as a computer security tester, and a sys-admin. I have spent most of my time running, hacking, or writing networked and distributed software. I try to spend as little of my time doing GUI programming. 
+
+I've also dropped out of a mathematics degree, and have burned out a number of times.
+
+
+Are you a good programmer?
+--------------------------
+I am not a very good programmer. I forget to write tests, my documentation is sparse, and i'm pretty apologetic at any code review. I also write bugs. Lots of bugs. I have pretty high standards in the naïve belief that it is possible to write software that sucks much, much less than what we put up with.
+
+I'm also wrong a lot of the time. That didn't seem to be a roadblock for the majority of people who write about programming on the internet.
 
 
 
-What are the Two Types Of Programmers?
-======================================
+What makes good and what makes bad programmers?
+===============================================
 
 Many blogs claim to elcuidate a dichotomy of programmers - good and bad. Upon careful inspection, most of them turn out to actually dictate the following types:
 
@@ -34,67 +58,46 @@ The assertion is that if you cargo cult their personality, you too can be a succ
 
     B. Programmers who do not use my favourite language
 
-It’s easy and gets blog hits. Everyone loves a simple answer to a complex problem.
+It’s easy and gets blog hits. Everyone loves a simple answer to a complex problem. Here is my attempt
 
-      
-Why do you hate powerpoint and the cult of slideware?
-======================================================
-
-If you can read the slide deck after a talk has been given, without watching it, then the talk didn’t really add much. Powerpoint has been bashed for numerous reasons, mostly because it has overtaken the presenter in a talk, to the extent they are unnecessary.
-
-A short handout has it’s place. But it isn’t on a large screen, far away from most of the audience. Slides are not flashcards either. The focus of the talk is the presenter, and what they have to say. 
-
-How should I give a talk?
--------------------------
-When you give a talk, write down what you want to say. From there, work out if and where you need any visual accompanyment to the talk. I often use slides with a title to indicate the focus of the talk at that point.
-
-Avoid any text heavy slides, and generally text altogether. People don’t listen and read at the same time.
+    A. Programmers who know they will make mistakes
+    B. Programmers who think they will not make mistakes
 
 
+What are common mistakes programmers make?
+------------------------------------------
 
-What should I do when I am confronted with a brainteaser question in an interview?
-==================================================================================
+Optimism is the classic mistake programmers make, but it is often necessary because the task is so daunting. I am yet to meet a programmer who didn't chronically underestimate the time it takes to work, but there are less obvious examples.
 
-Leave
+Programmers like to complain, often starting “You would think that...” — Underlying this is the optimism that things can be better (Some like to think that they could have done better). Call me a cynic, but after years of fixing the bugs in software we are still no closer to fixing the behaviours in humans that propagate them.
 
-Why?
-----
+The mistakes we make are in part due to the environments we work in. It is just as important to find out why the bug got written as well as how to fix it, if we are to have any hope of learning from our mistakes.
 
-There are a couple of experiments that show the context and framing of a problem have a massive effect on how people try and solve it (Wasson Selection Task). Brainteasers are not very effective at determining your ability beyond brainteasers. 
+Project Management is often an attempt to control reality rather than observe it, and react to it. Milestones are handed down upon high with little room for error, because maybe we'll get it right *this time*.
 
-Unless you’ve being hired as a quiz show host, brainteasers in an interview are mostly to make the candidate panic and see how willing you are to put up with bizzare or ludricrous requests.
+Software defects aren't endemic, they're systematic.
 
-I’ve heard people justify them on this basis alone, because the job often involves bizzare or ludricrous requests from management, and they don’t like hearing “no”. 
+Why are defects systematic?
+---------------------------
 
-It is a very effective warning sign of a terrible job. 
+To quote Melvin Conway:
 
-But, I heard it was popular at facebook?
-----------------------------------------
-The same articles were written about Google. Before then it was Microsoft.  Brainteasers make for an easy filler article, and so it’s quite a popular urban myth.
+    ...organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
 
-Are there any other warning signs?
-----------------------------------
-Terms like ‘rockstar’, ‘ninja’ usually mean that the programmers are managed as if they are spoilt children. 
+Essentially the software reflects the social structures of the teams that built it. If you need service orientated architecture, your teams should be structured around providing services to other teams, as opposed to delivering software or code. 
 
-The quality of the tools they use to communicate (email, project management, calendaring) correlate with the quality of the communication. Using tools that suck makes every day suck a little more.
+This raises its head in other ways - ‘God’ objects are often caused by ‘God’ programmers. People on the team who hoard responsibility for parts of the code and amass them into a lump. Frequently other programmers make small offerings to the object, and ensure that their code worships at its feet. 
 
-
-How do you interview programmers?
-=================================
-
-The interview is code-sample driven. After reviewing the credentials of the programmer, we ask them to provide code samples, or complete a simple afternoon’s task ~1-2 hours at most.
-
-Once we have the code sample, the technical interview begins. We start with the code sample and ask them to explain some of the choices they made while writing it, as well as things they’ve left out. We ask about some changes in operation and how they might best be implemented.
-
-After that, we move onto their credentials and experience - we work through each language, tool or product used and talk about their experiences with it, as well as some trivia questions to gauge the depth of the knowledge. Rather than focusing on obscure parts of the product, we focus on common gotchas and problems faced. 
-
-We often explore the depths of the candidates experience as well as just broad knowledge - focusing in on some detail. I tend to ask deeper and deeper questions until I exhaust my knowlege or the candidates. 
-
-Eventually we move onto the ‘big problems’ in the job - the domain we spend most of our time in (networking, data processing)
-
-There is more to it than that, but essentially to interview a programmer, it’s best to have a good one to start with.
+It isn't just the structures within teams, the way in which we approach software developmet causes faults too. The Waterfall methodology was introduced as a strawman, and taken seriously and still used today. Mostly because it is easier to bill clients for than actually a good way to bill software.
 
 
+What's wrong with how we approach programming?
+----------------------------------------------
+Programming is not a science or an art, it’s rituals and cargo-culting at best. Our best practices amount to old wives tales from people who learned to program on punch cards, and we barely test our software, let alone our precious methodologies. At best, It's a craft.
+
+Programming by and large is learned from maintaing existing software — fixing, testing, and adapting it, not creating it. That it not to deny the value of experimental programming, the adage ‘Top Down the second time’ still rings true. Often a prototype is needed to explore the idea, and understand the consequences of it. It is from maintaining this protoype you learn new approaches.
+
+We don't just write bad code, we manage it badly and teach it badly.
 
 
 What’s wrong with how we teach programming?
@@ -190,196 +193,84 @@ Part of programming is mathematical, not to say that differential geometry is so
 
 Programming is ultimately an interdisciplinary set of skills: Programmers need to be able to write fluently, have critical reasoning skills, engineering dicipline as well as mathematical reasoning. Often overlooked is one of the most vital skills; Domain experience of the problem you are trying to solve. 
 
-
-TODO: Flight search and full text
-=================================
-
-I used to work within skyscanner.net (~2 years ago) so I've had a little exposure
-to the insanity of commerical airline pricing, but I mostly dealt with
-aggregation.
-
-As much as I claim that airlines are the main obstacle to finding
-flights that is no excuse for not having a good interface, and
-I applaud your efforts into exploring natural language search :)
-
-but you asked for it, so here is what I think the colour of the bikeshed
-should be
-
-and as a disclaimer - I claim no ownership over these ideas
-and I don't know how useful you'll find them, if at all :)
-
-
-open ended searches
--------------------
-
-I tried searching from where I am to anywhere, but couldn't find a way to sort
-by distance rather than price. I tried typing things in too.
-
-It would be nice to sort open ended destinations by other criteria like
-weather conditions.
-
-For open-ended destinations, you might consider presenting a map
-(I know skyscanner do something like this for the seo pages)
-
-(the pictures are a nice touch though, although you might
-want to consider loading them last after the page has loaded.
-I dunno if other people get as grumpy as I do when a page
-slows down for ornamentation)
-
-
-graphs
-------
-
-(although I imagine most people would prefer animated
-dancing 3d pie charts)
-
-usability suggestions:
-
-would be nice to be able to drag to move the graph
-around as well as zoom in and out to explore larger ranges
-
-make the area under the curve clickable, rather than forcing
-people to select a small area under the dot, anywhere
-over the date area will show the price.
-
-I feel I must quantify any design aesthetic decisions
-with a futher disclaimer: information design is not the same
-as graphic design, and I am only an amateur at both.
-
-everyone making graphs should read edward tuftes first book.
-
-use negative space to emphasise divisions rather than using
-lines - i.e break up the area under the graph, drawing the
-lines over it in the background colour/darker shade.
-
-if all of it is selectable, you don't need the dot so much
-any more, and could probably get away with something
-less attention seeking - like a small nub on the line of
-a subway map
-
-for areas of no-service you might as well dim the
-area under the line (and you could do the same to the
-line and keep the dashes)
-
-you might want to indicate when weekends are on the graph
-
-tuftes data ink captures what i'm after here:
- http://www.infovis-wiki.net/index.php/Data-Ink_Ratio
-
-you might find a calendar more appealing than a list of dates
-within the range beneath the graph - dates are rarely expressed
-as a timeline.
-
-if you can think of a good way to express confidence in the
-aggregates back to the user that would be cool too.
-
-
-natural language input
-----------------------
-
-feature discovery - using natural language can be a lot
-like playing zork. it becomes a game of guess the verb
-
-decomposing the bits of the search you understood
-into a form or a sentence based configuation widget [1]
-might not be so bad as a last resort instead of simply
-giving up and erroring out (the last thing I need is a
-flight search that behaves like a compiler).
-
-(cf: google still allows you to use a form for
-heavier or more precise queries)
-
-with a good query in hand, it can construct
-a natural query and redirect to it - so the user
-can get an example of a well formed query.
-
-better feature discovery should make search refinement
-much easier.
-
-search refinement:
-
-your current related searches allow me to change my search
-but don't really allow me to broaden or widen my search terms.
-
-(this matters most for the open ended searches)
-
-You could add more links underneath (or somewhere useful) the query,
-or simply give me a box underneath that allows me to add
-refinements, and the suggestions for it can be specific to the sub-query
-
-(a bit like the itunes/mail filter dialog, I can add subqueries, delete
-and drag to reorder)
-
-so as I progress through the site, more sub-queries are added underneath
-and can be edited/moved/deleted
-
-this would allow me to order results as well as filter them.
-
-a bit like breadcrumbs, rather than the current method of blizting the
-original query when refining
-
-(although this might be entirely useless outside of the broadest queries)
-
-
-final thoughts
---------------
-
-you still ask for the outbound date before the inbound date
-and I couldn't find a way to express duration of holiday
-
-I find that finding a cheap flight is a back-and-forward price
-of moving both dates
-
-many search engines fail because they don't let you nail
-down the bits that are fixed first before exploring the options
-
-instead you must always give the information in a fixed order.
-
-(I often care about the time of flight more than the day of flight)
-
-budget airlines push all the fare craziness into the fees
-your search doesn't seem to account for this.
-
-(dealing with luggage rates or surprise fees is a headache
-no one solves)
-
-
-copy email in here
-
-feature discovery is hard
-
-
-
-
-TODO Why did Dijkstra Hate on Basic?
+How do you learn to design software?
 ====================================
 
-Dijkstra is an emminently quotable computer scientst, mostly for his famous lists of uncomfortable truths. Oft repeated is his rallying call against BASIC, most of the time without context:
-
-    It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration.
-
-The essay itself was arguing "How do we tell truths that might hurt?", when commonly accepted problems are shrugged off or avoided. The answer turns out to be rather inflamatory. Dijskstra was so effective at raising his arguments this way that we're still arguing about them now.
-
-The thing people forget is that programming was substantially different in 1975. Dijkstra railed against Dartmouth Basic - a glorified assembler language. It isn't the BASIC used today:
-
-    Variables were one letter long with an optional digit
-    Although FOR was present - while loops, break and other niceties were implemented with unrestricted goto. 
-    Whitespace was optional between expressions.
-    Subroutines were available. GOSUB linenumber and RETURN. All parameter passing had to be done with the existing global variables.
-    26 user defined functions could exist FNA-FNZ, which could contain one line of code.
-    IF statements were also limited to one line of code.
-
-I could go on about the limitations, but the consequecnes are pretty obvious: It was hard to write readable and understandable code in. The features we take for granted now just weren't present. It wasn't until after the article that BASIC began to grow up, into the language people know today.
-
-When you learn your first language, you continue to write programs in that style in other languages (“You can write FORTRAN in any language”). The hardest part of growing as a programmer is not accquiring new knowledge, but unlearning old habits in light of it. 
-
-Learning to carefully assembled a large ball of mud didn't help you to write structured programs. Even today, it would be easier to teach someone a modern variant of basic if they'd had little or no exposure to it's grotesque ancestor. Although some sucessors still have a lot to answer for.
-
-Programming is hard. Making it harder doesn't help beginners, or experts alike. It is a shame that dijkstra is most remembered for his vocal criticism rather than his vast contributions to programming, but that is another issue altogether.
 
 
-XXX What goes wrong in Group Projects?
-======================================
+
+XXX How do I become a successful programmer?
+============================================
+
+I wrote tests, documented code, trained my co-workers to use and maintain the package I wrote, and even documented the build system.
+
+I was made redundant. However, many other programmers I have met have managed to sustain employment and increase pay, and I will share these strategies I have encountered.
+
+hoard information
+close bugs without thinking about consquences
+that’s your managers job
+
+
+XXX How about being a good one
+------------------------------
+
+
+read large code bases
+programmers /writers analogy
+we hire based on what they’re written but we assume they’re well read
+don’t work by published amount but time in the industry
+no portfolio
+most of stuff is read by other people daily 
+and you, as you’re writing it or implementing it
+
+write as it you'll re-write it tomorrow. it will never be done.
+
+
+cordyceps/miyamoto retrospective
+frameworks for client work
+throw it away again and again
+sample driven
+loose coupled 
+wrap third party libs *always*
+dependencies should be easy to overwrite
+
+XXX What causes code smells?
+
+
+XXX Why are programs so ugly ?
+==============================
+The simple answer is that good design is hard - it isn’t a desire for control that makes people write complex programs, it is just much easier to do so.
+”I have ~20 possible use cases of this tool I know I’ll add options” vs “How can I split these ~20 cases into simpler component parts”
+The original unix developers adored simplicity, but this love wasn’t inherited by those who followed on - indeed “cat came back waving flags”.
+Every programmer I have met laments the unnecessary complexity in day to day life, be it programs themselves or the bureaucracy in the code farms they work at.
+
+The desire for simplicity will influence the way you attempt to solve the problem, but it doesn’t make the difference between a good solution and a bad one.
+If anything, programmers are lazy, and interface design is not taught as part of a programming curriculum.
+Ultimately, interfaces are frequently driven by the implementation of a program rather than the workflow of the problem they are there to solve.
+
+
+
+Why do you hate powerpoint and the cult of slideware?
+======================================================
+
+If you can read the slide deck after a talk has been given, without watching it, then the talk didn’t really add much. Powerpoint has been bashed for numerous reasons, mostly because it has overtaken the presenter in a talk, to the extent they are unnecessary.
+
+A short handout has it’s place. But it isn’t on a large screen, far away from most of the audience. Slides are not flashcards either. The focus of the talk is the presenter, and what they have to say. 
+
+How should I give a talk?
+-------------------------
+When you give a talk, write down what you want to say. From there, work out if and where you need any visual accompanyment to the talk. I often use slides with a title to indicate the focus of the talk at that point.
+
+Avoid any text heavy slides, and generally text altogether. People don’t listen and read at the same time.
+
+Handouts can be annotated slides, with the secion of the talk they accompany.
+
+
+	
+      
+
+Why do group projects fail?
+===========================
 
 The Bike Shed
 -------------
@@ -422,122 +313,77 @@ Enthusiasm didn't get us to the moon, but we've got 18 logos and a wiki. A fatal
 When a lot of people want to solve a problem and don't know how, much of the bad ideas above surface and not much else. The most common cause of this is video games. Everyone has played them and not very many people have written them. A lot of enthusiasm goes a long way. Mostly "What should we call it", and "I can make a better logo"
 
 
+What should I do when I am confronted with a brainteaser question in an interview?
+==================================================================================
 
-XXX What’s your issue with “You would think that”
-=================================================
+Leave
 
-you would think that -- the eternal optimisim of programmers at large
-estimates suck
-they write lots of bugs
-they chronically underestimate difficulty
+Why?
+----
 
-it’s a coping mechanism
+There are a couple of experiments that show the context and framing of a problem have a massive effect on how people try and solve it (Wasson Selection Task). Brainteasers are not very effective at determining your ability beyond brainteasers. 
 
+Unless you’ve being hired as a quiz show host, brainteasers in an interview are mostly to make the candidate panic and see how willing you are to put up with bizzare or ludricrous requests.
 
-XXX Why do you keep banging on about Cap and Zookos Triangle
-============================================================
-    
-zooko’s triangle and you
-pki is hard
-petnames 
-distributed dns systems are hard
-and heh, it still has a vanguard
+I’ve heard people justify them on this basis alone, because the job often involves bizzare or ludricrous requests from management, and they don’t like hearing “no”. 
 
-namecoin:
-    
-persistance
+It is a very effective warning sign of a terrible job. 
 
+But, I heard it was popular at facebook?
+----------------------------------------
+The same articles were written about Google. Before then it was Microsoft.  Brainteasers make for an easy filler article, and so it’s quite a popular urban myth.
 
-like cap it is about tradeoffs
-XXX: process migration and distribution?
-
-
-XXX What can you tell about a team from its code?
-=================================================
-
-XXX What causes code smells?
-----------------------------
-Smelly work environments. To quote Melvin Conway:
-
-    ...organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
-
-Essentially the software reflects the social structures of the teams that built it. If you need service orientated architecture, your teams should be structured around providing services to other teams. 
-
-This raises its head in other ways - ‘God’ objects are often caused by ‘God’ programmers. People on the team who hoard responsibility for parts of the code and amass them into a lump. Frequently other programmers make small offerings to the object, and ensure that their code worships at its feet. 
-
-Broken software comes from dysfunctional teams.
-
-
-So is bad code written by bad people?
--------------------------------------
-Or good people in a bad environment.
-aka the ****** rant
-hoard information
-close bugs without thinking about consquences
-that’s your managers job
-
-
-XXX How about being a good one
-==============================
-
-Pyramid building & ignorance of time - write only mentality of software devs
-diiijkkssstrrrraaaa
-software as livestock
-top down the second time:
-if you want to know how long it wil ltake you have to do it once to measure it?
-experimental programming is good
-basically I am saying you can only design and architect large systems after you have used and maintained a couple (bug fixes, features, etc)
-
-read large code bases
-programmers /writers analogy
-we hire based on what they’re written but we assume they’re well read
-don’t work by published amount but time in the industry
-no portfolio
-most of stuff is read by other people daily 
-and you, as you’re writing it or implementing it
-
-
-
-cordyceps/miyamoto retrospective
-frameworks for client work
-throw it away again and again
-sample driven
-loose coupled 
-wrap third party libs *always*
-dependencies should be easy to overwrite
-	
-
-
-XXX Why are programs so ugly ?
-==============================
-The simple answer is that good design is hard - it isn’t a desire for control that makes people write complex programs, it is just much easier to do so.
-”I have ~20 possible use cases of this tool I know I’ll add options” vs “How can I split these ~20 cases into simpler component parts”
-The original unix developers adored simplicity, but this love wasn’t inherited by those who followed on - indeed “cat came back waving flags”.
-Every programmer I have met laments the unnecessary complexity in day to day life, be it programs themselves or the bureaucracy in the code farms they work at.
-
-The desire for simplicity will influence the way you attempt to solve the problem, but it doesn’t make the difference between a good solution and a bad one.
-If anything, programmers are lazy, and interface design is not taught as part of a programming curriculum.
-Ultimately, interfaces are frequently driven by the implementation of a program rather than the workflow of the problem they are there to solve.
-
-
-XXX What makes good api design? 
--------------------------------
-
-
-XXX What makes good communication?
+Are there any other warning signs?
 ----------------------------------
-has structure
-allows the reader to choose the depth at which they want to interact
-is clear
+Terms like ‘rockstar’, ‘ninja’ usually mean that the programmers are managed as if they are spoilt children. 
 
-XXX: maybe own section
-data visualization is more than just percentages at different font sizes
+The quality of the tools they use to communicate (email, project management, calendaring) correlate with the quality of the communication. Using tools that suck makes every day suck a little more.
 
-data visualization is about interpreting data and you must 
-take the viewer into account - more room for propaganda
-    
-good visualizations are honest and do not distort the facts of figures
-		
+
+How do you interview programmers?
+=================================
+
+The interview is code-sample driven. After reviewing the credentials of the programmer, we ask them to provide code samples, or complete a simple afternoon’s task ~1-2 hours at most.
+
+Once we have the code sample, the technical interview begins. We start with the code sample and ask them to explain some of the choices they made while writing it, as well as things they’ve left out. We ask about some changes in operation and how they might best be implemented.
+
+After that, we move onto their credentials and experience - we work through each language, tool or product used and talk about their experiences with it, as well as some trivia questions to gauge the depth of the knowledge. Rather than focusing on obscure parts of the product, we focus on common gotchas and problems faced. 
+
+We often explore the depths of the candidates experience as well as just broad knowledge - focusing in on some detail. I tend to ask deeper and deeper questions until I exhaust my knowlege or the candidates. 
+
+Eventually we move onto the ‘big problems’ in the job - the domain we spend most of our time in (networking, data processing)
+
+There is more to it than that, but essentially to interview a programmer, it’s best to have a good one to start with.
+
+
+
+
+
+
+XXX Why is searching for flights so painful?
+============================================
+
+Airlines, and our interfaces suck.
+
+
+Why?
+----
+
+Before the rise of budget flights, it was common that every person on a flight paid a different price. 
+
+When the price of your flight varies on both outbound and return dates, if there is a return flight, if the journey is either side of a saturday, if it is made on the same date. The myriad of rules and routes make the question of finding the cheapest a rather exponential task.
+
+The price calculations were so intensive, that the airlines outsourced it. Many airlines pay per query for finding out a flight. Many of the booking restrictions present revolve around legacy issues within them. I have heard stories of websites screen scraping vt100 terminals, and the passenger limit in booking is due to the original tty interface only having so many input fields (It wasn't until the rise of the internet that airlines could bypass these behemoths of travel booking).
+
+These pricing complexities make the general problem of flight search exponential [#ita]. Given these constraints it is hard to know how to collate the data in order to find answers to open-ended questions, like finding a cheap weekend to fly to a number of destinations. 
+
+Most interfaces are built around the queries we can answer quickly rather than the queries we want to ask. Then we strive to make them worse.
+
+(And we haven't begun to think about airline fees, taxes and baggage restrictions)
+
+.. [#ita] http://www.demarcken.org/carl/papers/ITA-software-travel-complexity/ITA-software-travel-complexity.pdf
+
+I've seen a few attempts to liberate airline search from forms that would make bugzilla wince, and embrace free text search but there are a number of hard issues, primarily feature discovery and search refinement.  
 
 
 
@@ -679,6 +525,24 @@ outside of terminating the process and restated
 
 
 
+XXX Why do you keep banging on about Cap and Zookos Triangle
+============================================================
+    
+zooko’s triangle and you
+pki is hard
+petnames 
+distributed dns systems are hard
+and heh, it still has a vanguard
+
+namecoin:
+    
+persistance
+
+
+like cap it is about tradeoffs
+XXX: process migration and distribution?
+
+
 XXX why do programs fail?
 =========================
 
@@ -688,7 +552,7 @@ otp
 
 
 XXX What do you think of Static Analysis
---------------------------------------
+----------------------------------------
 	john carmack analysis - static alanlysys making up for langueg defatcs but still noy t the erlang approach towards robustness
 	
 
@@ -837,6 +701,33 @@ yield is somewhat less awkward to use, but still constrains
 fibers/stacklets/actors work best 
 
 
+
+
+TODO Why did Dijkstra Hate on Basic?
+====================================
+
+Dijkstra is an emminently quotable computer scientst, mostly for his famous lists of uncomfortable truths. Oft repeated is his rallying call against BASIC, most of the time without context:
+
+    It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration.
+
+The essay itself was arguing "How do we tell truths that might hurt?", when commonly accepted problems are shrugged off or avoided. The answer turns out to be rather inflamatory. Dijskstra was so effective at raising his arguments this way that we're still arguing about them now.
+
+The thing people forget is that programming was substantially different in 1975. Dijkstra railed against Dartmouth Basic - a glorified assembler language. It isn't the BASIC used today:
+
+    Variables were one letter long with an optional digit
+    Although FOR was present - while loops, break and other niceties were implemented with unrestricted goto. 
+    Whitespace was optional between expressions.
+    Subroutines were available. GOSUB linenumber and RETURN. All parameter passing had to be done with the existing global variables.
+    26 user defined functions could exist FNA-FNZ, which could contain one line of code.
+    IF statements were also limited to one line of code.
+
+I could go on about the limitations, but the consequecnes are pretty obvious: It was hard to write readable and understandable code in. The features we take for granted now just weren't present. It wasn't until after the article that BASIC began to grow up, into the language people know today.
+
+When you learn your first language, you continue to write programs in that style in other languages (“You can write FORTRAN in any language”). The hardest part of growing as a programmer is not accquiring new knowledge, but unlearning old habits in light of it. 
+
+Learning to carefully assembled a large ball of mud didn't help you to write structured programs. Even today, it would be easier to teach someone a modern variant of basic if they'd had little or no exposure to it's grotesque ancestor. Although some sucessors still have a lot to answer for.
+
+Programming is hard. Making it harder doesn't help beginners, or experts alike. It is a shame that dijkstra is most remembered for his vocal criticism rather than his vast contributions to programming, but that is another issue altogether.
 
 
 
@@ -999,7 +890,6 @@ bikeshedding is fun and that is why everyone does it. unconstrained problems nev
 
 large software gets written in teams. people who are bad to work with write code that’s bad to work with.
 
-programming is not a science or an art, it’s rituals and cargo-culting at best. our best practices amount to old wives tales from people who learned to program on punch cards, and we barely test our software, let alone our precious methodologies.
 
 people would rather have a problem they understand over a solution they don’t. coming up with a very clever way to do something usually alienates it from being adopted.
 
