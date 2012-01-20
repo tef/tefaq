@@ -191,6 +191,163 @@ Part of programming is mathematical, not to say that differential geometry is so
 Programming is ultimately an interdisciplinary set of skills: Programmers need to be able to write fluently, have critical reasoning skills, engineering dicipline as well as mathematical reasoning. Often overlooked is one of the most vital skills; Domain experience of the problem you are trying to solve. 
 
 
+TODO: Flight search and full text
+=================================
+
+I used to work within skyscanner.net (~2 years ago) so I've had a little exposure
+to the insanity of commerical airline pricing, but I mostly dealt with
+aggregation.
+
+As much as I claim that airlines are the main obstacle to finding
+flights that is no excuse for not having a good interface, and
+I applaud your efforts into exploring natural language search :)
+
+but you asked for it, so here is what I think the colour of the bikeshed
+should be
+
+and as a disclaimer - I claim no ownership over these ideas
+and I don't know how useful you'll find them, if at all :)
+
+
+open ended searches
+-------------------
+
+I tried searching from where I am to anywhere, but couldn't find a way to sort
+by distance rather than price. I tried typing things in too.
+
+It would be nice to sort open ended destinations by other criteria like
+weather conditions.
+
+For open-ended destinations, you might consider presenting a map
+(I know skyscanner do something like this for the seo pages)
+
+(the pictures are a nice touch though, although you might
+want to consider loading them last after the page has loaded.
+I dunno if other people get as grumpy as I do when a page
+slows down for ornamentation)
+
+
+graphs
+------
+
+(although I imagine most people would prefer animated
+dancing 3d pie charts)
+
+usability suggestions:
+
+would be nice to be able to drag to move the graph
+around as well as zoom in and out to explore larger ranges
+
+make the area under the curve clickable, rather than forcing
+people to select a small area under the dot, anywhere
+over the date area will show the price.
+
+I feel I must quantify any design aesthetic decisions
+with a futher disclaimer: information design is not the same
+as graphic design, and I am only an amateur at both.
+
+everyone making graphs should read edward tuftes first book.
+
+use negative space to emphasise divisions rather than using
+lines - i.e break up the area under the graph, drawing the
+lines over it in the background colour/darker shade.
+
+if all of it is selectable, you don't need the dot so much
+any more, and could probably get away with something
+less attention seeking - like a small nub on the line of
+a subway map
+
+for areas of no-service you might as well dim the
+area under the line (and you could do the same to the
+line and keep the dashes)
+
+you might want to indicate when weekends are on the graph
+
+tuftes data ink captures what i'm after here:
+ http://www.infovis-wiki.net/index.php/Data-Ink_Ratio
+
+you might find a calendar more appealing than a list of dates
+within the range beneath the graph - dates are rarely expressed
+as a timeline.
+
+if you can think of a good way to express confidence in the
+aggregates back to the user that would be cool too.
+
+
+natural language input
+----------------------
+
+feature discovery - using natural language can be a lot
+like playing zork. it becomes a game of guess the verb
+
+decomposing the bits of the search you understood
+into a form or a sentence based configuation widget [1]
+might not be so bad as a last resort instead of simply
+giving up and erroring out (the last thing I need is a
+flight search that behaves like a compiler).
+
+(cf: google still allows you to use a form for
+heavier or more precise queries)
+
+with a good query in hand, it can construct
+a natural query and redirect to it - so the user
+can get an example of a well formed query.
+
+better feature discovery should make search refinement
+much easier.
+
+search refinement:
+
+your current related searches allow me to change my search
+but don't really allow me to broaden or widen my search terms.
+
+(this matters most for the open ended searches)
+
+You could add more links underneath (or somewhere useful) the query,
+or simply give me a box underneath that allows me to add
+refinements, and the suggestions for it can be specific to the sub-query
+
+(a bit like the itunes/mail filter dialog, I can add subqueries, delete
+and drag to reorder)
+
+so as I progress through the site, more sub-queries are added underneath
+and can be edited/moved/deleted
+
+this would allow me to order results as well as filter them.
+
+a bit like breadcrumbs, rather than the current method of blizting the
+original query when refining
+
+(although this might be entirely useless outside of the broadest queries)
+
+
+final thoughts
+--------------
+
+you still ask for the outbound date before the inbound date
+and I couldn't find a way to express duration of holiday
+
+I find that finding a cheap flight is a back-and-forward price
+of moving both dates
+
+many search engines fail because they don't let you nail
+down the bits that are fixed first before exploring the options
+
+instead you must always give the information in a fixed order.
+
+(I often care about the time of flight more than the day of flight)
+
+budget airlines push all the fare craziness into the fees
+your search doesn't seem to account for this.
+
+(dealing with luggage rates or surprise fees is a headache
+no one solves)
+
+
+copy email in here
+
+feature discovery is hard
+
 
 
 
@@ -266,7 +423,6 @@ When a lot of people want to solve a problem and don't know how, much of the bad
 
 
 
-
 XXX What’s your issue with “You would think that”
 =================================================
 
@@ -293,17 +449,28 @@ persistance
 
 
 like cap it is about tradeoffs
+XXX: process migration and distribution?
+
+
+XXX What can you tell about a team from its code?
+=================================================
 
 XXX What causes code smells?
-============================
-corporate smells
+----------------------------
+Smelly work environments. To quote Melvin Conway:
 
-service driven architecture
-i.e the yegge rant with a bit of conways law
+    ...organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
+
+Essentially the software reflects the social structures of the teams that built it. If you need service orientated architecture, your teams should be structured around providing services to other teams. 
+
+This raises its head in other ways - ‘God’ objects are often caused by ‘God’ programmers. People on the team who hoard responsibility for parts of the code and amass them into a lump. Frequently other programmers make small offerings to the object, and ensure that their code worships at its feet. 
+
+Broken software comes from dysfunctional teams.
 
 
-XXX How do I be a successful programmer?
-========================================
+So is bad code written by bad people?
+-------------------------------------
+Or good people in a bad environment.
 aka the ****** rant
 hoard information
 close bugs without thinking about consquences
@@ -512,8 +679,16 @@ outside of terminating the process and restated
 
 
 
+XXX why do programs fail?
+=========================
+
+jim gray's awesome paper
+otp
+---
+
+
 XXX What do you think of Static Analysis
-========================================
+--------------------------------------
 	john carmack analysis - static alanlysys making up for langueg defatcs but still noy t the erlang approach towards robustness
 	
 
@@ -583,8 +758,17 @@ no notion of seperation or failure management.
 
 
 
-XXX Why isn't my web service RESTful
-====================================
+XXX Why do you hate web services? 
+=================================
+
+Because they don't work like the web does. 
+
+
+Can you elaborate?
+------------------
+
+Does it work with load balancers? Proxies? Caches?
+Does it work when you move bits around and keep the links?
 
 XXX Why do you keep banging on about Hypermedia APIs
 ----------------------------------------------------
@@ -823,3 +1007,12 @@ butts.
 
 programming is hard and you will suck at it. try to suck less.
 
+
+
+TODO
+====
+XXX good ideas in p2p
+
+XXX Distributed DNS
+
+XXX Censorship resistant publishing? 
