@@ -193,28 +193,25 @@ Part of programming is mathematical, not to say that differential geometry is so
 
 Programming is ultimately an interdisciplinary set of skills: Programmers need to be able to write fluently, have critical reasoning skills, engineering dicipline as well as mathematical reasoning. Often overlooked is one of the most vital skills; Domain experience of the problem you are trying to solve. 
 
-How do you learn to design software?
-====================================
+
+TODO How do I become a successful programmer?
+=============================================
+
+I tend to burn out in jobs, but many other programmers I have met have managed to sustain employment and increase pay, and I will share these strategies I have encountered.
+
+Although you will be forced to document your software, don't be afraid to write ugly prose, and ensure you leave out failure cases, or data types or arguments. Hopefully you will always be too busy to document and test the code. You have important bugs to fix.
+
+Write lots of code. Lots of code. Autocomplete Helps. Use your own ad-hoc naming scheme. Write your own wrappers around standard library functions. Reinvent liberally. Learn to use the advanced features of your ide and language and use them everywhere. Don't be afraid to seperate everything out into modules that only make sense when combined.
+
+Fix problems by creating new ones. Ensure that if you close the bug for now, someone new will re-open it. You can create an equilibrium by constantly shifting the problem around.
+
+Ensure your tests only pass some of the time. Better if only on your machine with some elaborate setup. Become the central point of failure for the development — those who aren’t will be passed over or lose their job.
+
+Job security comes from constant creation of work only you can do. If you act like you are the only programmer and this is the only bug you have, you will go far and be rewarded for your heroics in sabotaging the product.
 
 
-
-
-XXX How do I become a successful programmer?
-============================================
-
-I wrote tests, documented code, trained my co-workers to use and maintain the package I wrote, and even documented the build system.
-
-I was made redundant. However, many other programmers I have met have managed to sustain employment and increase pay, and I will share these strategies I have encountered.
-
-hoard information
-close bugs without thinking about consquences
-that’s your managers job
-
-
-XXX How about being a good one
-------------------------------
-
-
+XXX How about being a good one?
+-------------------------------
 read large code bases
 programmers /writers analogy
 we hire based on what they’re written but we assume they’re well read
@@ -226,15 +223,13 @@ and you, as you’re writing it or implementing it
 write as it you'll re-write it tomorrow. it will never be done.
 
 
-cordyceps/miyamoto retrospective
+retrospective
 frameworks for client work
 throw it away again and again
 sample driven
 loose coupled 
 wrap third party libs *always*
 dependencies should be easy to overwrite
-
-XXX What causes code smells?
 
 
 XXX Why are programs so ugly ?
@@ -549,6 +544,11 @@ XXX why do programs fail?
 jim gray's awesome paper
 otp
 ---
+XXX Why do you hate threads?
+threads: the windows 95 of concurrency
+share everything and hope nothing shits itself
+
+no notion of seperation or failure management.
 
 
 XXX What do you think of Static Analysis
@@ -613,12 +613,6 @@ Tracing works best for small amounts of live objects and large amounts of dead o
 Hybrid garbage collection
 
 
-XXX Why do you hate threads?
-============================
-threads: the windows 95 of concurrency
-	share everything and hope nothing shits itself
-
-no notion of seperation or failure management.
 
 
 
