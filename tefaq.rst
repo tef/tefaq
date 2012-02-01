@@ -9,6 +9,11 @@ This is unfinished and work in progress. There aren't links or references yet, s
 
 .. contents::
 
+.. 
+    todo:
+        continue with 'how to be a good programmer'
+        add hyperlinks to existing articles
+        move out finished sections to additional files?
 
 Why are you writing an FAQ?
 ===========================
@@ -163,8 +168,8 @@ Don’t worry about objects and classes too much. Worry about data structures an
 
 Learning a language should be a side effect of some larger and more interesting goal. People rarely learn languages for their own merits.
 
-Scripting? Real mean use C! I want to be a Real man!
-----------------------------------------------------
+Scripting? Real men use C! I want to be a Real man!
+---------------------------------------------------
 
 C is a useful language. Many languages are implemented it it. Much of the libraries and operating system is implemented in it. Unless C is the only option for the project desired, I wouldn’t advocate it as a first language.
 
@@ -212,6 +217,10 @@ Job security comes from constant creation of work only you can do. If you act li
 
 XXX How about being a good one?
 -------------------------------
+
+.. 
+    current 
+
 read large code bases
 programmers /writers analogy
 we hire based on what they’re written but we assume they’re well read
@@ -242,6 +251,11 @@ Every programmer I have met laments the unnecessary complexity in day to day lif
 The desire for simplicity will influence the way you attempt to solve the problem, but it doesn’t make the difference between a good solution and a bad one.
 If anything, programmers are lazy, and interface design is not taught as part of a programming curriculum.
 Ultimately, interfaces are frequently driven by the implementation of a program rather than the workflow of the problem they are there to solve.
+
+
+
+
+
 
 
 
@@ -352,11 +366,8 @@ There is more to it than that, but essentially to interview a programmer, it’s
 
 
 
-
-
-
-XXX Why is searching for flights so painful?
-============================================
+Why is searching for flights so painful?
+========================================
 
 Airlines, and our interfaces suck.
 
@@ -370,20 +381,18 @@ When the price of your flight varies on both outbound and return dates, if there
 
 The price calculations were so intensive, that the airlines outsourced it. Many airlines pay per query for finding out a flight. Many of the booking restrictions present revolve around legacy issues within them. I have heard stories of websites screen scraping vt100 terminals, and the passenger limit in booking is due to the original tty interface only having so many input fields (It wasn't until the rise of the internet that airlines could bypass these behemoths of travel booking).
 
-These pricing complexities make the general problem of flight search exponential [#ita]. Given these constraints it is hard to know how to collate the data in order to find answers to open-ended questions, like finding a cheap weekend to fly to a number of destinations. 
+These pricing complexities make the general problem of flight search exponential [#ita]_. Given these constraints it is hard to know how to collate the data in order to find answers to open-ended questions, like finding a cheap weekend to fly to a number of destinations. 
 
 Most interfaces are built around the queries we can answer quickly rather than the queries we want to ask. Then we strive to make them worse.
 
 (And we haven't begun to think about airline fees, taxes and baggage restrictions)
 
-.. [#ita] http://www.demarcken.org/carl/papers/ITA-software-travel-complexity/ITA-software-travel-complexity.pdf
-
 I've seen a few attempts to liberate airline search from forms that would make bugzilla wince, and embrace free text search but there are a number of hard issues, primarily feature discovery and search refinement.  
 
+.. [#ita] http://www.demarcken.org/carl/papers/ITA-software-travel-complexity/ITA-software-travel-complexity.pdf
 
 
-
-TODO Why are pointers so hard to understand?
+XXXX Why are pointers so hard to understand?
 ============================================
 Because they are badly taught
 
@@ -530,7 +539,9 @@ distributed dns systems are hard
 and heh, it still has a vanguard
 
 namecoin:
-    
+    proof of work in lieu of central authority
+    now you have two problems
+
 persistance
 
 
@@ -554,8 +565,8 @@ XXX What do you think of Static Analysis
 
 
 
-Are design patterns a good thing?
-=================================
+TODO Are design patterns a good thing?
+======================================
 No
 
 Why?
@@ -570,9 +581,6 @@ Now we use objects to make a ‘strategy’ or a ‘factory’ or a ‘builder�
 Peter Norvig makes a good argument for this http://www.norvig.com/design-patterns/
 
 XXX: still easier to implement a missing feature over a missing library
-
-XXX What are some language features that are missing
-====================================================
 
 
 What about hungarian notation
