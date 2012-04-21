@@ -16,6 +16,10 @@ This is unfinished and work in progress. There aren't links or references yet, s
         continue with 'how to be a good programmer'
         add hyperlinks to existing articles
         move out finished sections to additional files?
+        why do programs fail, why is networked software so hard.
+            i.e the lol gevent/coroutines/mq argument
+            reinventing the past poorly.
+        add citations to github 
 
 Why are you writing an FAQ?
 ===========================
@@ -245,113 +249,6 @@ Bear in mind: It is OK to write ugly code. As long as the things using it don't 
 
 
 
-Why are programs ugly?
-======================
-
-Our programs are as pretty as the problems we solve. Often theoretically gorgeous, but practically disgusting.  Although we can easily identify good code, designing it in the first place is usually harder.
-
-Good design is hard - we don‘t build towering monsters of code bases out of spite, but because it is easier to give into complexity, over managing it. 
-
-Like mathematics, it is a case of containing the ugly, giving it a nice name, and hiding it away in an abstraction. That is not to say that it is easy - naming things is acknowledged to be one of the two hardest problems in programming (The other problem is cache invalidation, and off-by-one errors).
-
-There are good names, and there are bad names for things. 
-
-What's the worst name?
-----------------------
-
-util
-
-Although strong contenders are Manager
-
-Why?
-----
-
-util is a rat hole where functions go to die. util starts with well meaning developers putting things that don’t fit elsewhere in the source code. Eventually util becomes a hideous mass of stolen features. 
-
-I would strongly advocate using a bunch of small files appropriately named, over util, even if the file only contains one function. They're easier to find, and often easier to maintain. 
-
-There is relatively little written on how programs get the way we do. We seem to accept that 
-
-
-
-The simple answer is that good design is hard - it isn’t a desire for control that makes people write complex programs, it is just much easier to do so.
-”I have ~20 possible use cases of this tool I know I’ll add options” vs “How can I split these ~20 cases into simpler component parts”
-The original unix developers adored simplicity, but this love wasn’t inherited by those who followed on - indeed “cat came back waving flags”.
-
-
-Every programmer I have met laments the unnecessary complexity in day to day life, be it programs themselves or the bureaucracy in the code farms they work at.
-
-The desire for simplicity will influence the way you attempt to solve the problem, but it doesn’t make the difference between a good solution and a bad one.
-If anything, programmers are lazy, and interface design is not taught as part of a programming curriculum.
-Ultimately, interfaces are frequently driven by the implementation of a program rather than the workflow of the problem they are there to solve.
-
-XXX - c.f 
-
-'naming things'
-
-
-TODO Are design patterns a good thing?
---------------------------------------
-No
-
-Why?
-----
-
-A design pattern is an abstraction that the language enables but does not support. We chastise those who copy and paste code as beginners, but when experts do it is is a “design pattern”.
-
-In the early days of computing using a conditional goto in a certain way would be an ‘if-pattern’, or a ‘while pattern’. Pushing ret onto the stack would be a ‘function pattern’. We got past that and now we all take structured programming for granted (well, most of us).
-
-Now we use objects to make a ‘strategy’ or a ‘factory’ or a ‘builder’. Meanwhile i'm going to stay over here and use my first class functions and named/optional arguments. 
-
-Peter Norvig makes a good argument for this http://www.norvig.com/design-patterns/
-
-XXX: still easier to implement a missing feature over a missing library
-
-
-What about hungarian notation?
-------------------------------
-Hungarian notation comes up every now and again, like some deep sea monster, and frequently the cause is Joel Spolsky.
-
-His article on Systems vs Apps Hungarian advocates “application style” and then goes on to argue it's merits for preventing cross site scripting (XSS) attacks.
-
-I think that his example is a foolish attempt at xss prevention that amounts to security theater.
-
-The debate between Systems and Apps Hungarian regardless of prefix is essentially the debate between naming variables after their type or naming variables after their intent.
-
-I agree that encoding intent in names is a good thing, and leads to better code, but I don't think Joel is right that you can prevent cross site scripting through naming conventions.
-
-The security of a system is not measured by its strengths but by its weaknesses. Joel argues that using hungarian notation can help prevent XSS attacks, but it he admits it will not always work.
-
-He argues that it is better than nothing, but fails to compare it to complete solutions. No matter how secure your door is, it won't matter
-if they break through the walls. His method of prevention may prevent some errors but it cannot eradicate them altogether.
-
-Keeping raw strings and html seperate requires seperate types for each, and it's trivial in most languages to define new classes or objects. Another alternative is templates wherein things are escaped by default.
-
-Many classes of software vunerabilities are type errors - format string attacks, cross site scripting, and sql injection - and there is no excuse for modern software to be vulnerable to these. The methods of prevention are well established, and documented.
-
-There will always be a burden on the programmer to ensure safety. Using hungarian notation for this does not alleivate the programmer at all, and can require significant maintenance.
-
-Type safety requires a type system, not a naming convention.
-
-
-XXX why do programs fail?
-=========================
-
-jim gray's awesome paper
-otp
----
-XXX Why do you hate threads?
-
-
-XXX What do you think of Static Analysis
-----------------------------------------
-	john carmack analysis - static alanlysys making up for langueg defatcs but still noy t the erlang approach towards robustness
-	
-
-
-
-
-
 How do you interview programmers?
 =================================
 
@@ -478,6 +375,7 @@ bikeshedding is fun and that is why everyone does it. unconstrained problems nev
 
 large software gets written in teams. people who are bad to work with write code that’s bad to work with.
 
+project management is time management.
 
 people would rather have a problem they understand over a solution they don’t. coming up with a very clever way to do something usually alienates it from being adopted.
 
