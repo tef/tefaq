@@ -1,6 +1,6 @@
-================
- tefaq — wtfwtd
-================
+==============================================================
+ programming is terrible. lessons learned from a life wasted.
+==============================================================
 :Author: tef
 :Date: 2012-02-06
 :Version: Unpublished Draft
@@ -375,13 +375,23 @@ bikeshedding is fun and that is why everyone does it. unconstrained problems nev
 
 large software gets written in teams. people who are bad to work with write code that’s bad to work with.
 
-project management is time management.
+project management is time and risk management
 
 people would rather have a problem they understand over a solution they don’t. coming up with a very clever way to do something usually alienates it from being adopted.
+
+do you ask your boss every time you write a for loop? why would you ask permission to write tests?
+
+prototypes being rushed into production is a consequence of software on the cheap
+
+when managers talk about 'A programmers' they mean people who will work long hours for little to no pay. (and the whole 10x productivity thing is bunk too)
 
 butts.
 
 programming is hard and you will suck at it. try to suck less.
+
+
+..
+	
 
 
 
